@@ -1,26 +1,23 @@
 <?php session_start(); ?>
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8" />
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
     <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
     <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
-    <meta content="width=device-width, maximum-scale=1.0" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport" />
     <link href="https://animaproject.s3.amazonaws.com/home/favicon.png" rel="shortcut icon" type="image/png" />
     <meta content="website" name="og:type" />
     <meta content="photo" name="twitter:card" />
     <link href="css/pop-up-log.css" rel="stylesheet" type="text/css" />
-    <link href="../css/log.css" rel="stylesheet" type="text/css" />
-    <link href="../css/styleguide.css" rel="stylesheet" type="text/css" />
-    <link href="../css/globals.css" rel="stylesheet" type="text/css" />
-    <!--Google Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Identification</title>
-</head>
-
-<body class="log">
+    <link href="css/styleguide.css" rel="stylesheet" type="text/css" />
+    <link href="css/globals.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body style="margin: 0">
+    <input id="anPageName" name="page" type="hidden" value="pop-up-log" />
+    <div class="pop-up-log screen">
+      <div class="pop_up_log">
+      <body>
 <?php
 //Cas d'un utilisateur déconnecté
 if(!isset($_SESSION['connected']) || $_SESSION['connected'] !== 1) {
@@ -31,7 +28,7 @@ if(!isset($_SESSION['connected']) || $_SESSION['connected'] !== 1) {
     }
 
     //Connexion à la base de données
-    include('../Include/connexion.php');
+    include('Include/connexion.php');
 
     //Cas d'un utilisateur déconnecté tentant une connexion
     if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
@@ -82,7 +79,7 @@ if(!isset($_SESSION['connected']) || $_SESSION['connected'] !== 1) {
                     //Cas où le mot de passe entré ne correspond pas à celui de la base de données
                     else {
                         //Renvoi du formulaire avec message erreur
-                        include('login.php');
+                        include('Client/login.php');
                         echo "Désolé, votre connexion a échoué.";
                     }
 
@@ -105,15 +102,69 @@ if(!isset($_SESSION['connected']) || $_SESSION['connected'] !== 1) {
 
     //Cas d'un utilisateur déconnecté n'ayant pas encore tenté de connexion
     } else {
-        include('login.php');
+        include('Client/login.php');
 
     }
 }
 //Cas d'un utilisateur connecté
 else {
     //Affichage de la connexion
-    include('logged.php');
+    include('Client/logged.php');
 }
 ?>
 </body>
+      </div>
+    </div>
+    <script>
+      closeOutsideOverlay("pop-up-contact");
+    </script>
+    <script>
+      closeOutsideOverlay("pop-up-log");
+    </script>
+    <script>
+      closeOutsideOverlay("pop-up-mentions");
+    </script>
+    <script>
+      closeOutsideOverlay("pop-up-cart");
+    </script>
+    <script>
+      closeOutsideOverlay("submenu-dropdown-12");
+    </script>
+    <script>
+      closeOutsideOverlay("submenu-dropdown");
+    </script>
+    <script>
+      closeOutsideOverlay("submenu-dropdown2");
+    </script>
+    <script>
+      closeOutsideOverlay("submenu-dropdown3");
+    </script>
+    <script>
+      closeOutsideOverlay("submenu-dropdown4");
+    </script>
+    <script>
+      closeOutsideOverlay("submenu-dropdown5");
+    </script>
+    <script>
+      closeOutsideOverlay("submenu-dropdown6");
+    </script>
+    <script>
+      closeOutsideOverlay("submenu-dropdown7");
+    </script>
+    <script>
+      closeOutsideOverlay("submenu-dropdown8");
+    </script>
+    <script>
+      closeOutsideOverlay("submenu-dropdown9");
+    </script>
+    <script>
+      closeOutsideOverlay("submenu-dropdown10");
+    </script>
+    <script>
+      closeOutsideOverlay("submenu-dropdown11");
+    </script>
+    <script>
+      closeOutsideOverlay("submenu-dropdown12");
+    </script>
+  </body>
 </html>

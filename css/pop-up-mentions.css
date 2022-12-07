@@ -1,0 +1,23 @@
+/* screen - pop-up-mentions */
+
+.pop-up-mentions {
+  align-items: flex-start;
+  border: 1px none;
+  display: flex;
+  min-width: 365px;
+}
+
+#overlay-pop-up-mentions {
+  align-items: center;
+  background-color: #ffffff00;
+  justify-content: center;
+}
+
+.pop-up-mentions .pop_up_mentions {
+  align-items: flex-end;
+  border: 1px none;
+  display: flex;
+  height: 285px;
+  justify-content: center;
+  min-width: 365px;
+}

@@ -1,0 +1,29 @@
+/* screen - submenu-dropdown5 */
+
+.submenu-dropdown5 {
+  align-items: flex-start;
+  border: 1px solid;
+  border-color: var(--colorlight);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 100px;
+  min-width: 114px;
+  padding: 10px;
+  width: 100%;
+}
+
+#overlay-submenu-dropdown5 {
+  align-items: center;
+  background-color: #ffffff00;
+  justify-content: center;
+}
+
+.submenu-dropdown5 .nav-item {
+  align-items: flex-start;
+  border: 1px none;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  width: fit-content;
+}

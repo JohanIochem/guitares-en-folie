@@ -1,0 +1,57 @@
+:root { 
+  --black: #000000;
+  --colordark: #353331;
+  --colorlight: #f2efeb;
+  --gallery: #f2efebb2;
+  --mine-shaft: #353331b2;
+ 
+  --font-size-l: 32px;
+  --font-size-m: 24px;
+  --font-size-s: 21px;
+  --font-size-xl: 45px;
+  --font-size-xs: 16px;
+  --font-size-xxs: 13px;
+  --font-size-xxxs: 10px;
+ 
+  --font-family-im_fell_dw_pica_sc-regular: "IM Fell DW Pica SC", Helvetica;
+  --font-family-source_sans_pro: "Source Sans Pro", Helvetica;
+}
+.sourcesanspro-bold-gallery-xxxs {
+  color: var(--colorlight);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-xxxs);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.sourcesanspro-bold-gallery-xxs {
+  color: var(--colorlight);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.sourcesanspro-bold-gallery-21px {
+  color: var(--colorlight);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.imfelldwpicasc-regular-normal-mine-shaft-32px {
+  color: var(--colordark);
+  font-family: var(--font-family-im_fell_dw_pica_sc-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sourcesanspro-semi-bold-mine-shaft-24px {
+  color: var(--colordark);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}

@@ -1,0 +1,28 @@
+/* screen - pop-up-log */
+
+.pop-up-log {
+  align-items: flex-start;
+  border: 1px none;
+  display: flex;
+  min-width: 365px;
+  background-image: "img/pop-up-1@2x.png";
+  z-index: 10;
+  position: relative;
+  right: -23vw;
+  top: -9vw;
+}
+
+#overlay-pop-up-log {
+  align-items: center;
+  background-color: #ffffff00;
+  justify-content: center;
+}
+
+.pop-up-log .pop_up_log {
+  align-items: flex-end;
+  border: 1px none;
+  display: flex;
+  height: 285px;
+  justify-content: center;
+  min-width: 365px;
+}
